@@ -1,0 +1,51 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 144rem;
+    padding: 0 2rem;
+    height: 7.7rem;
+
+    & > div {
+        font-size: 1.6rem;
+        color: $primary-red;
+        display: flex;
+        align-items: center;
+
+
+        & > svg {
+            transition-duration: 0.4s;
+        }
+
+        & > span {
+            font-weight: 400;
+        }
+        &:hover {
+            cursor: pointer;
+            & > svg {
+                color: $primary-green;
+            }
+        }
+    }
+}
+
+.logo {
+    
+    & > img {
+        width: 15rem;
+    }
+}
+
+.image{
+    background-color: $primary-red;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    & > img{
+        max-width: 10rem;
+        align-content: center;
+        
+    }
+}

@@ -1,0 +1,45 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    & > div {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 2rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    & > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        & > li {
+            width: 15.4rem;
+            display: flex;
+            justify-content: center;
+            
+            &:hover {
+                cursor: pointer;
+                color: $primary-white;
+                background-color: $primary-red;
+                & > svg {
+                    transition: 0.5s;
+                    transform: rotate(180deg);
+                }
+
+            }
+        }
+    }
+}
+
+.menu{
+    background-color: $primary-red;
+    color: $primary-white;
+}
