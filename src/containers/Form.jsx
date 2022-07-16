@@ -17,7 +17,7 @@ const Form = () => {
 
     <span className={styles.text}>Dejanos tus datos y recibe una atención personalizada</span>
 
-    <label form='name' style={styles.input}>
+    <label form='name' className={styles.input}>
         <fieldset>
             <legend>Nombre</legend>
             <input name='name' id='name' required type="text" placeholder='Nombre completo'  onChange={(e) => handleChange(e)}/> 
