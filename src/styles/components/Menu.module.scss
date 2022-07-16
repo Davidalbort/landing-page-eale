@@ -6,7 +6,9 @@
     font-size: 1.6rem;
     font-weight: 400;
     text-transform: uppercase;
+    z-index: 0;
     & > div {
+        margin-left: 1rem;
         display: flex;
         justify-content: start;
         margin-bottom: 2rem;

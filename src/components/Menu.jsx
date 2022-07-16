@@ -1,11 +1,15 @@
 import React from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
+import  styles  from '../styles/components/Menu.module.scss';
 
-const Menu = () => {
+const Menu = ({handleClick}) => {
   return (
-    <div>
+    <div className={styles.container}>
+        <div onClick={ handleClick}>
+            X cerrar
+        </div>
         <ul>
-            <li>
+            <li className={styles.menu}>
                 menu
             </li>
             <li>

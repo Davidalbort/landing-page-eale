@@ -2,6 +2,7 @@ import React from 'react';
 import { Logo } from '../components/Logo';
 import { AiOutlineMenuFold } from 'react-icons/ai';
 import { Image } from '../components/Image';
+import styles from '../styles/containers/Header.module.scss';
 
 const Header = ({handleClick}) => {
     const logo = {
@@ -15,9 +16,9 @@ const Header = ({handleClick}) => {
         href: 'https://www.grupovalor.com.co/'
     }
   return (
-    <nav>
+    <nav className={styles.container}>
         <Logo
-            className=''
+            className={styles.logo}
             urlLogo={logo.url}
             alt={logo.alt}
             href={logo.href}
@@ -27,7 +28,7 @@ const Header = ({handleClick}) => {
             <span>Menu</span>
         </div>
         <Image
-            className=''
+            className={styles.image}
             urlImage={image.url}
             alt={image.alt}
             href={image.href}

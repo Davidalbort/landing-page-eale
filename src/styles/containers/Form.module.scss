@@ -1,0 +1,30 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    align-self: center;
+    color: $primary-orange;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    align-self: center;
+    color: $primary-black;
+    margin-top: 1.8rem;
+}
+
+.input{
+    & > fieldset{
+        border-radius: none;
+    }
+}

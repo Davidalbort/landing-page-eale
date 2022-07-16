@@ -1,0 +1,16 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    max-width: 144rem;
+    
+}   
+
+.image {
+    
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+}

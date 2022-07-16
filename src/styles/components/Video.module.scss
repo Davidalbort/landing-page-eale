@@ -1,0 +1,74 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    max-width: 108.4rem;
+    max-height: 58.1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top:-30px;
+    margin: auto;
+   
+}
+
+.icon{
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    margin-left: clamp(26rem,60vw,100rem);
+    & > div {
+        width: clamp(4.5rem,9vw,7.5rem);
+        height: clamp(4.5rem,9vw,7.5rem);
+        border-radius: 6rem;
+        background-color: $secundary-green;
+        font-size: clamp(1.2rem,2vw,1.6rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > svg {
+            color: $secundary-green;
+            background-color: $secundary-white;
+            width: clamp(1.5rem,2vw,3rem);
+            height: clamp(1.5rem,2vw,3rem);
+            border-radius: 2rem;
+            
+    }
+    
+    }
+
+}
+
+.video{
+   
+    
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    & > div {
+        display: flex;
+        position: relative;
+        max-width: 94.6rem;
+        max-height: 50.6rem;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding-top: 47.25%;
+        top: 1px;
+        & > iframe{
+            position: absolute;
+            max-width: 94.6rem;
+            max-height: 50.6rem;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            align-self: center;
+    
+           
+        }
+    }
+}
